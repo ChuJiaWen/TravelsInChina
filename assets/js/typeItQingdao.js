@@ -1,0 +1,33 @@
+new TypeIt("#typeItQingdao", {
+   speed: 50
+
+})
+.type("Quiet atmosphere", {speed: 150})
+  .pause(300)
+  .delete(15, {speed: 150})
+  .pause(300)
+  .type(" Important city", {speed: 100})
+  .pause(500)
+  .delete(13, {speed: 150})
+  .pause(300)
+  .type(" Natural environment", {speed: 100})
+  .pause(500)
+  .delete(18, {speed: 200})
+  .pause(300)
+  .type(" Green trees", {speed: 100})
+  .pause(500)
+  .delete(10, {speed: 150})
+  .pause(300)
+  .type(" Different culture", {speed: 100})
+  .pause(500)
+  .delete(16, {speed: 150})
+  .pause(300)
+  .type(" A tourist city", {speed: 100})
+  .pause(500)
+  .delete(13, {speed: 150})
+  .pause(300)
+  .type(" Open to everyone", {speed: 100})
+  .pause(500)
+  .delete(15, {speed: 150})
+  
+  .go();

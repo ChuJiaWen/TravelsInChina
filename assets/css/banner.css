@@ -1,0 +1,597 @@
+/* Banner */
+
+	#banner {
+		display: -ms-flexbox;
+		-ms-flex-pack: center;
+		-ms-flex-align: center;
+		padding: 8em 0 6em 0;
+		-moz-align-items: center;
+		-webkit-align-items: center;
+		-ms-align-items: center;
+		align-items: center;
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-justify-content: center;
+		-webkit-justify-content: center;
+		-ms-justify-content: center;
+		justify-content: center;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		border-top: 0;
+		min-height: 100vh;
+		height: 100vh;
+		position: relative;
+		text-align: center;
+		overflow: hidden;
+	}
+
+		#banner .inner {
+			-moz-transform: scale(1.0);
+			-webkit-transform: scale(1.0);
+			-ms-transform: scale(1.0);
+			transform: scale(1.0);
+			-moz-transition: opacity 1s ease, -moz-transform 1s ease;
+			-webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
+			-ms-transition: opacity 1s ease, -ms-transform 1s ease;
+			transition: opacity 1s ease, transform 1s ease;
+			opacity: 1;
+			position: relative;
+			z-index: 2;
+		}
+
+		#banner h1 {
+			font-size: 7em;
+			line-height: 1.1;
+			font-family: 'Caveat', cursive;
+			margin-bottom: .25em;
+			color: rgba(255, 255, 255, 0.75);
+			text-shadow: -2px -2px 0 rgba(0, 0, 0, 0.125);
+			text-transform: none;
+		}
+
+		#banner p {
+			color: rgba(255, 255, 255, 0.85);
+			font-size: 2.5em;
+            font-family: 'Caveat', cursive;
+		}
+
+		h1#firstname{
+			font-size: 5em;
+		}
+
+	@-moz-keyframes more {
+		0% {
+			bottom: -3em;
+		}
+
+		100% {
+			bottom: 2em;
+		}
+	}
+
+	@-webkit-keyframes more {
+		0% {
+			bottom: -3em;
+		}
+
+		100% {
+			bottom: 2em;
+		}
+	}
+
+	@-ms-keyframes more {
+		0% {
+			bottom: -3em;
+		}
+
+		100% {
+			bottom: 2em;
+		}
+	}
+
+	@keyframes more {
+		0% {
+			bottom: -3em;
+		}
+
+		100% {
+			bottom: 2em;
+		}
+	}
+
+		#banner .more {
+			-moz-transition: height 0.2s ease;
+			-webkit-transition: height 0.2s ease;
+			-ms-transition: height 0.2s ease;
+			transition: height 0.2s ease;
+			-moz-animation: more 0.75s ease-out 3s forwards;
+			-webkit-animation: more 0.75s ease-out 3s forwards;
+			-ms-animation: more 0.75s ease-out 3s forwards;
+			animation: more 0.75s ease-out 3s forwards;
+			background-color: rgba(255, 255, 255, 0.15);
+			border: 0;
+			border-radius: 1em 1em 0 0;
+			bottom: -3em;
+			color: rgba(255, 255, 255, 0.75);
+			display: block;
+			height: 3em;
+			left: 50%;
+			margin-left: -1.5em;
+			overflow: hidden;
+			position: absolute;
+			text-indent: 3em;
+			white-space: nowrap;
+			width: 3em;
+			z-index: 2;
+			border-radius: 100%;
+			text-decoration: none;
+		}
+
+
+			#banner .more:before {
+				-moz-osx-font-smoothing: grayscale;
+				-webkit-font-smoothing: antialiased;
+				font-family: FontAwesome;
+				font-style: normal;
+				font-weight: normal;
+				text-transform: none !important;
+			}
+
+			#banner .more:hover {
+				background: none;
+				color: rgba(255, 255, 255, 0.5);
+				box-shadow: 0 0 1px 0 rgba(255, 255, 255, 0.5);
+				transform: scale(1.1);
+				transition: transform 1s;
+		}
+			}
+
+				#banner .more:hover:before {
+					color: rgba(255, 255, 255, 0.5);
+				}
+
+			#banner .more:before {
+				content: '\f107';
+				color: #FFF;
+				font-size: 2em;
+				position: absolute;
+				right: .425em;
+				bottom: -.075em;
+			}
+
+		#banner:before {
+			-moz-transition: opacity 3s ease;
+			-webkit-transition: opacity 3s ease;
+			-ms-transition: opacity 3s ease;
+			transition: opacity 3s ease;
+			-moz-transition-delay: 1.25s;
+			-webkit-transition-delay: 1.25s;
+			-ms-transition-delay: 1.25s;
+			transition-delay: 1.25s;
+			content: '';
+			display: block;
+			background-color: #000;
+			height: 100%;
+			left: 0;
+			opacity: 0.45;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			z-index: 1;
+		}
+
+		@media screen and (max-width: 980px) {
+
+			#banner {
+				font-size: .85em;
+			}
+
+				#banner br {
+					display: none;
+				}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#banner {
+				background-attachment: scroll;
+				min-height: 0;
+				padding: 8em 2em 4em 2em;
+			}
+
+				#banner h1 {
+					font-size: 6em;
+				}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			#banner h1 {
+				font-size: 4em;
+			}
+
+			#banner .more {
+				display: none;
+			}
+
+		}
+
+		body.is-loading #banner .inner {
+			-moz-transform: scale(0.99);
+			-webkit-transform: scale(0.99);
+			-ms-transform: scale(0.99);
+			transform: scale(0.99);
+			opacity: 0;
+		}
+
+		body.is-loading #banner:before {
+			opacity: 1;
+		}
+
+/* Banner */
+
+	#post {
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+	}
+
+		#post .inner {
+			margin: 0 auto;
+		}
+
+		#post .button.icon {
+			padding: 0;
+			width: 3em;
+			height: 3em;
+			line-height: 3em;
+			border-radius: 100%;
+			text-align: center;
+		}
+
+			#post .button.icon:before {
+				margin-right: 0;
+				color: #FFF;
+			}
+
+			#post .button.icon.fa-chevron-left:before {
+				margin-left: -3px;
+			}
+
+			#post .button.icon.fa-chevron-right:before {
+				margin-left: 3px;
+			}
+
+		#post ul.actions li {
+			width: 49.5%;
+			margin: 0;
+			padding: 0;
+		}
+
+			#post ul.actions li:first-child {
+				text-align: left;
+			}
+
+			#post ul.actions li:last-child {
+				text-align: right;
+			}
+
+		@media screen and (max-width: 736px) {
+
+			#post {
+				background-attachment: scroll;
+				background-size: cover;
+			}
+
+				#post h2 {
+					font-size: 1.5em;
+				}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			#post ul.actions li {
+				display: inline-block;
+				width: 49%;
+				margin: 0;
+				padding: 0;
+			}
+
+		}
+
+	.post {
+		display: -ms-flexbox;
+		-ms-flex-pack: center;
+		-ms-flex-align: center;
+		-moz-align-items: center;
+		-webkit-align-items: center;
+		-ms-align-items: center;
+		align-items: center;
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-justify-content: center;
+		-webkit-justify-content: center;
+		-ms-justify-content: center;
+		justify-content: center;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		border-top: 0;
+		min-height: 100vh;
+		height: 100vh;
+		position: relative;
+		text-align: center;
+		overflow: hidden;
+	}
+
+		.post .box {
+			margin: 0;
+		}
+
+	@-moz-keyframes inner {
+		0% {
+			opacity: 0;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+
+	@-webkit-keyframes inner {
+		0% {
+			opacity: 0;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+
+	@-ms-keyframes inner {
+		0% {
+			opacity: 0;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+
+	@keyframes inner {
+		0% {
+			opacity: 0;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+
+		.post .inner {
+			-moz-transform: scale(1.0);
+			-webkit-transform: scale(1.0);
+			-ms-transform: scale(1.0);
+			transform: scale(1.0);
+			-moz-transition: opacity 1.25s ease, -moz-transform 1s ease;
+			-webkit-transition: opacity 1.25s ease, -webkit-transform 1s ease;
+			-ms-transition: opacity 1.25s ease, -ms-transform 1s ease;
+			transition: opacity 1.25s ease, transform 1s ease;
+			opacity: 0;
+			position: relative;
+			z-index: 2;
+		}
+
+			.post .inner.current {
+				opacity: 1;
+			}
+
+		.post:before {
+			-moz-transition: opacity 3s ease;
+			-webkit-transition: opacity 3s ease;
+			-ms-transition: opacity 3s ease;
+			transition: opacity 3s ease;
+			-moz-transition-delay: 1.25s;
+			-webkit-transition-delay: 1.25s;
+			-ms-transition-delay: 1.25s;
+			transition-delay: 1.25s;
+			content: '';
+			display: block;
+			background-color: #000;
+			height: 100%;
+			left: 0;
+			opacity: 0.45;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			z-index: 1;
+		}
+
+	@-moz-keyframes more {
+		0% {
+			bottom: -3em;
+		}
+
+		100% {
+			bottom: 2em;
+		}
+	}
+
+	@-webkit-keyframes more {
+		0% {
+			bottom: -3em;
+		}
+
+		100% {
+			bottom: 2em;
+		}
+	}
+
+	@-ms-keyframes more {
+		0% {
+			bottom: -3em;
+		}
+
+		100% {
+			bottom: 2em;
+		}
+	}
+
+	@keyframes more {
+		0% {
+			bottom: -3em;
+		}
+
+		100% {
+			bottom: 2em;
+		}
+	}
+
+		.post .more {
+			background-color: rgba(255, 255, 255, 0.15);
+			border: 0;
+			border-radius: 1em 1em 0 0;
+			bottom: -3em;
+			color: rgba(255, 255, 255, 0.75);
+			display: block;
+			height: 3em;
+			left: 50%;
+			margin-left: -1.5em;
+			overflow: hidden;
+			position: absolute;
+			text-indent: 3em;
+			white-space: nowrap;
+			width: 3em;
+			z-index: 2;
+			border-radius: 100%;
+			text-decoration: none;
+		}
+
+			.post .more:before {
+				-moz-osx-font-smoothing: grayscale;
+				-webkit-font-smoothing: antialiased;
+				font-family: FontAwesome;
+				font-style: normal;
+				font-weight: normal;
+				text-transform: none !important;
+			}
+
+			.post .more.current {
+				-moz-transition: height 0.2s ease;
+				-webkit-transition: height 0.2s ease;
+				-ms-transition: height 0.2s ease;
+				transition: height 0.2s ease;
+				-moz-animation: more 0.75s ease-out 2s forwards;
+				-webkit-animation: more 0.75s ease-out 2s forwards;
+				-ms-animation: more 0.75s ease-out 2s forwards;
+				animation: more 0.75s ease-out 2s forwards;
+			}
+
+			.post .more:hover {
+				background: none;
+				color: rgba(255, 255, 255, 0.5);
+				box-shadow: 0 0 1px 0 rgba(255, 255, 255, 0.5);
+			}
+
+				.post .more:hover:before {
+					color: rgba(255, 255, 255, 0.5);
+				}
+
+			.post .more:before {
+				content: '\f107';
+				color: #FFF;
+				font-size: 2em;
+				position: absolute;
+				right: .425em;
+				bottom: -.075em;
+			}
+
+		@media screen and (max-width: 980px) {
+
+			@-moz-keyframes more {
+				0% {
+					bottom: -3em;
+				}
+
+				100% {
+					bottom: 1.5em;
+				}
+
+		}
+
+			@-webkit-keyframes more {
+				0% {
+					bottom: -3em;
+				}
+
+				100% {
+					bottom: 1.5em;
+				}
+			}
+
+			@-ms-keyframes more {
+				0% {
+					bottom: -3em;
+				}
+
+				100% {
+					bottom: 1.5em;
+				}
+			}
+
+			@keyframes more {
+				0% {
+					bottom: -3em;
+				}
+
+				100% {
+					bottom: 1.5em;
+				}
+			} }
+
+		@media screen and (max-width: 736px) {
+
+			.post {
+				min-height: 0;
+				height: auto;
+				background-attachment: scroll;
+			}
+
+				.post h2 {
+					font-size: 1.5em;
+				}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			.post h2 {
+				font-size: 1.25em;
+			}
+
+			.post .more {
+				display: none;
+			}
+
+			.post .button {
+				width: 100%;
+			
+			#video1{display: none;}
+			#banner{background: url(images/home/china.jpg) no-repeat absolute;}
+			
+			}
+			
+}
+		
+#banner{background:url(images/home/china1.mp4);}

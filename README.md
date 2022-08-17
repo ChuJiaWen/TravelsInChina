@@ -1,5 +1,7 @@
 # TravelsInChina
 
+To run it, please download the whole folder and double click on "index.html".
+
 Contributors: Wanxin Qi, Jiawen Song, Jiawen Chu
 
 **_1. Whether you created your own HTML and CSS from scratch or modified a CSS template._**
